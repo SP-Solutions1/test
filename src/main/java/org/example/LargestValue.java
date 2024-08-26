@@ -11,10 +11,10 @@ public class LargestValue {
                 .toArray(String[]::new);
 
         Arrays.sort(stringNumbers, new Comparator<String>() {
-            @Override
             public int compare(String a, String b) {
                 String order1 = a + b;
                 String order2 = b + a;
+                System.out.println("order"+order2.compareTo(order1));
                 return order2.compareTo(order1); // descending order
             }
         });
